@@ -39,9 +39,24 @@ x = np.array([[0, 1.2],   [0, 2.3], [0.6, 2], [0.4, 3.1],
               [3.3, 1.4],  [2.8, 1.3], [3.2, 0.1], [0.3, 0]])
 y = np.array([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
               -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1])
+DATA_1 = DataSet(data_train=x, target_train=y)
+
 x_p = list(range(0, 12, 1))
 x_n = list(range(12, 24, 1))
 
-plt.scatter(x[x_p, 0], x[x_p, 1], marker='^', color='b')
-plt.scatter(x[x_n, 0], x[x_n, 1], marker='o', color='r')
-plt.show()
+# weight = np.array([1, 1])
+# bias = np.array([-1])
+# print(x.dot(weight)+bias)
+
+
+# plt.scatter(x[x_p, 0], x[x_p, 1], marker='^', color='b')
+# plt.scatter(x[x_n, 0], x[x_n, 1], marker='o', color='r')
+# dx = np.arange(0, 5, 0.01)
+
+
+# def f(x):
+#     return 1.5 * x
+
+
+# plt.plot(dx, f(dx))
+# plt.show()
